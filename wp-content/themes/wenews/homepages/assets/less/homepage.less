@@ -1,0 +1,223 @@
+@import "../../../less/variables.less";
+
+/*
+ * Styles for the top story
+ */
+.topstory {
+  .has-thumbnail {
+    background: @transparentbackground;
+    margin: -140px 10px 0;
+    position: relative;
+    padding: 12px 24px;
+    h2 {
+      margin-bottom: 12px;
+    }
+    @media (max-width: 640px) {
+	  margin-top: -40px;
+	}
+  }
+  img {
+    width: 100%;
+  }
+  @media (max-width: 640px) {
+    h2 {
+      font-size: 36px;
+      line-height: 1.125;
+    }
+  }
+}
+
+/*
+ * Styles for the three posts below the topstory
+ */
+article,
+.topstory-below {
+  .has-thumbnail {
+    position: relative;
+    h5.top-tag {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: @transparentbackground;
+      padding: 4px 10px;
+      z-index: 1001;
+      a {
+	    color: @darkgray;
+      }
+    }
+  }
+  h3 {
+    margin-bottom: 12px;
+    margin-top: 8px;
+  }
+  @media (min-width: 801px) {
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    .span4 {
+      width: 30%;
+      float: left;
+      box-sizing: content-box;
+      padding-bottom: 9999px;
+      margin-bottom: -9999px;
+      &:first-child {
+        padding-left: 0;
+        padding-right: 2.5%;
+      }
+      &:nth-child(3n+2) {
+	    padding-right: 2.5%;
+      }
+    }
+  }
+}
+/*
+ * Styles for the two homepage widgets in the main flow
+ */
+.span8 .widget-area {
+  border-top: 1px solid @lightgray;
+  padding-top: 30px;
+  ul {
+    margin: 0;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 24px;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  h5 {
+    margin-bottom: 12px;
+    &.top-tag {
+	  margin-bottom: 4.8px;
+    }
+  }
+  .span6 {
+    width: 47.5%;
+    &:first-child {
+      float: left;
+    }
+    &:nth-child(2) { // This is the right-hand one
+      float: right;
+      border: 1px solid @lightgray;
+      padding: 20px;
+      // Styles making the header of this widget into the Teen Voices logo.
+      h3 {
+        background-image: url("../../../img/teen-voices-color.png");
+        background-size: 64px 64px;
+        height: 64px;
+        width: 64px;
+        display: block;
+        font-size: 1px;
+        color: transparent;
+      }
+      .widget {
+        margin-top: 0;
+      }
+      h3 {
+        text-align: center;
+      }
+      .morelink {
+        text-align: center;
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  @media (max-width: 980px) {
+    .span6:nth-child(2) {
+      img {
+	    display: block; 
+	    margin: 0 auto;
+      }
+      h5 {
+	    font-size: 36px;
+	    text-align: center;    
+      }
+    }
+  }
+}
+#sidebar {
+  padding-left: 20px;
+}
+
+/**
+ * Styles for the posts in the main homepage content area
+ */
+.stories article.span4 {
+  border-bottom: none;
+  width: 33.3333333333333%;
+  padding: 1.5em;
+  overflow: hidden;
+  h2.entry-title {
+    font-size: 44px;
+  }
+  &.has-post-thumbnail h2.entry-title {
+    font-size: 32px;
+    line-height: 1.2;  
+  }
+  img {
+    margin-bottom: 8px;
+  }
+  &:nth-child(3n+2) {
+    padding-right: 0;
+  }
+  &:nth-child(3n+3) {
+    clear: left;
+    padding-left: 0;
+  }
+  // height hack
+  &:nth-child(3n+2),
+  &:nth-child(3n+1) {
+    border-left: 1px solid @lightgray;
+  }
+}
+
+#nav-below {
+  text-align: center;
+  clear: both;
+}
+.load-more a {
+  padding: 24px;
+  font-size: 20px;
+}
+// Strange conflict with Largo
+article div.has-thumbnail {
+  float: none;
+  max-width: 100%;
+  margin: inherit;
+}
+
+@media (max-width: 980px) {
+  #content .span6 {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 12px;
+  }
+  .span8 .widget-area h5 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    &.top-tag {
+	  font-size: 16px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .topstory-below .span4,
+  #content .span6,
+  #content > .row > .span8,
+  #content > .row > .span4 {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  #sidebar {
+    padding-left: 0;
+  }
+  #content .span4 {
+    width: 100%;
+    margin: 0 0 12px;
+    padding: 0;
+    border-left: none;
+  }
+}

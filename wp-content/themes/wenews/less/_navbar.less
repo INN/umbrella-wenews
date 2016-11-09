@@ -1,0 +1,30 @@
+// Nav styles
+.navbar li > a,
+.sticky-nav-holder .navbar li > a {
+  color: @darkgray;
+}
+.navbar .open > a,
+.sticky-nav-holder .navbar .nav > li.active > a:hover,
+html.no-touch .navbar li > a:hover {
+  background-color: transparent;
+  //text-decoration: underline;
+  //color: @darkgray;
+  color: black;
+}
+.sticky-nav-holder .navbar li.dropdown.open > .dropdown-toggle,
+.sticky-nav-holder .navbar .nav > li.active > a {
+  color: @darkgray;
+  background-color: transparent;
+}
+.navbar-inner {
+  background-color: transparent;
+  border-bottom: 1px solid @darkgray;
+  border-top: 1px solid @darkgray;
+}
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar {
+  background-color: transparent;
+}
+.navbar .btn-navbar .icon-bar {
+  background-color: @darkgray;
+}

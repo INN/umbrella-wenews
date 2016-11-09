@@ -1,0 +1,40 @@
+body.normal.page .hero,
+body.normal.single-post .hero {
+  background-color: transparent;
+}
+
+body.normal.single-post {
+  aside.module {
+    &.type-aside {
+      border-top: 3px solid #333;
+      border-bottom: 3px solid #333;
+      padding: 4px 8px;
+      overflow: hidden;
+    }
+    &.half {
+      width: 50%;
+    }
+    h3 {
+	  font-size: 24px;
+    }
+    p {
+	  font-size: 18px;
+	  margin-bottom: 0.5em;
+	  &.byline {
+	    font-size: 12px;
+	    font-style: italic;
+	    font-family: "leitura-news", Georgia, serif;
+	  }
+    }
+    h5 {
+	  margin-bottom: 0.5em;
+    }
+    @media (max-width: 768px) {
+	  &.half,
+	  &.full {
+	    width: 100%;
+	    margin-bottom: 1.5em;
+	  }
+    }
+  }
+}

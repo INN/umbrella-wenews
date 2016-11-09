@@ -1,0 +1,97 @@
+.widget,
+#sidebar .widget {
+  padding: 0;
+}
+.widgettitle,
+.stories h3.widgettitle {
+  font-size: 24px;
+  text-align: center;
+}
+.widgettitle,
+.stories h3.widgettitle {
+  &::after {
+    background-color: @darkgray;
+    width: 3.5em;
+    height: 0.2em;
+    content: "";
+    display: block;
+    clear: both;
+    margin: 0.5em auto;
+  }
+}
+#sidebar .widget {
+  border: 1px solid @lightgray;
+  padding: 24px;
+  .btn,
+  .btn-primary {
+    border: none;
+    background-color: @blue;
+    color: @white;
+    font-family: @sans;
+    width: 50%;
+    margin: 0 auto;
+    display: block; 
+    padding: 8px 20px 10px;
+  }
+  &.rev {
+    background-color: @lightgray;
+    color: #333;
+    a {
+      color: #333;
+    }
+  }
+  &.no-bg {
+    border: none;
+    padding: 0;
+  } 
+}
+
+// Largo tax list widget
+.widget-area .largo-taxonomy-list h5 {
+  margin-bottom: 0;
+}
+.largo-taxonomy-list {
+  a {
+    color: @darkgray;
+    font-family: @sans;
+    font-weight: 300;
+    &:hover {
+      color: @blue;
+    }
+  }
+  img {
+    margin-bottom: 1em;
+  }
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+// Saved Links widget
+.source {
+  font-family: @sans;
+  font-weight: 300;
+}
+// Override some styles set in the Saved Links Widget CSS, which is enqueued after this theme
+.widget.saved-links .post-lead {
+  p {
+    font-size: 12px;
+  }
+  h5 {
+    padding: 0;
+  }
+  p.description {
+    margin-bottom: 6px;
+  }
+}
+
+
+/*
+ * Footer styles
+ */
+#site-footer {
+  p,
+  h5 a {
+    color: #ddd;
+  }
+}
