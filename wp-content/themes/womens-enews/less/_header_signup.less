@@ -1,0 +1,93 @@
+#site-header {
+  // so the header newsletter signup is positioned properly
+  position: relative;
+  min-height: 153px;
+}
+header .newsletter-signup {
+  width: 262px;
+  color: @medgray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 20px;
+  z-index: 999;
+  padding: 1em;
+  background: @white;
+  border: 3px solid @blue;
+  //border: 1px solid #efefef;
+
+  p {
+    text-align: center;
+    font-size: 1.0em;
+    margin-bottom: 0.6em;
+    font-family: @sans;
+  }
+
+  .error {
+    color: @medgray;
+    font-size: 12px;
+    display: none;
+  }
+  .hidden-start {
+    display: none;
+  }
+
+  form {
+    clear: both;
+    background: @white;
+  }
+  button, input {
+    margin: 0 0 8px 0;
+    width: 100%;
+    padding: 6px;
+    font-family: @sans;
+  }
+  li input {
+    display: inline-block;
+    margin: 0 8px 0 0;
+    width: auto;
+  }
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  input[type="text"],
+  input[type="email"]{
+    box-sizing: border-box;
+    width: 100%;
+  }
+  input[type=submit] {
+    background: @red;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  label {
+    display:inline;
+    //font-family: @sans;
+    //color: @darkgray;
+    //font-size: 20px;
+    //font-weight: 700;
+    //text-align: center;
+    //margin-bottom: 0.5em;
+  }
+  .submit {
+    width: 100%;
+  }
+  .first_name,
+  .last_name {
+    display: none;
+  }
+
+  &.open {
+    .first_name,
+    .last_name {
+      display: inline-block;
+    }
+  }
+
+  @media (max-width: 570px) {
+    display: none;
+  }
+}
