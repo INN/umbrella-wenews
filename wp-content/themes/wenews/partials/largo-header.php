@@ -25,11 +25,8 @@ if ( ! is_single() && ! is_singular() || ! of_get_option( 'main_nav_hide_article
 					<input type="text" value="" name="FNAME" class="hidden-start" id="mce-FNAME" placeholder="First name"/>
 					<label class="visuallyhidden" for="mce-LNAME">Last Name </label>
 					<input type="text" value="" name="LNAME" class="hidden-start" id="mce-LNAME" placeholder="Last name"/>
-					<span class="hidden-start">Please choose the news that you'd like to receive. </span>
 					<ul class="hidden-start">
-						<li><input type="checkbox" value="2" name="group[3181][2]" id="mce-group[3181]-3181-1" checked><label for="mce-group[3181]-3181-1">Women's eNews</label></li>
-						<li><input type="checkbox" value="1" name="group[3181][1]" id="mce-group[3181]-3181-0"><label for="mce-group[3181]-3181-0">Teen Voices</label></li>
-						<li><input type="checkbox" value="4" name="group[3181][4]" id="mce-group[3181]-3181-2"><label for="mce-group[3181]-3181-2">Events</label></li>
+						<li><input type="checkbox" value="1" name="group[3181][1]" id="mce-group[3181]-3181-0" checked><label for="mce-group[3181]-3181-0">Teen Voices</label></li>
 					</ul>
 				<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f8aa48cf51fc5769dc5ce8dd9_b4ab36a284" tabindex="-1" value=""></div>
